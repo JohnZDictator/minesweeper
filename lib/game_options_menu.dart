@@ -47,7 +47,13 @@ class GameOptionsMenu extends StatelessWidget {
                 width: 10,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    GamePlayGround.routeName,
+                    arguments: GamePlayGroundArguments(4, 4),
+                  );
+                },
                 child: Container(
                   child: Center(
                     child: Text(
@@ -71,11 +77,17 @@ class GameOptionsMenu extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    GamePlayGround.routeName,
+                    arguments: GamePlayGroundArguments(6, 6),
+                  );
+                },
                 child: Container(
                   child: Center(
                     child: Text(
-                      '8 X 8 matrix',
+                      '6 X 6 matrix',
                       style: GoogleFonts.montserrat(fontSize: 18),
                     ),
                   ),
@@ -90,11 +102,17 @@ class GameOptionsMenu extends StatelessWidget {
                 width: 10,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    GamePlayGround.routeName,
+                    arguments: GamePlayGroundArguments(8, 8),
+                  );
+                },
                 child: Container(
                   child: Center(
                     child: Text(
-                      '16 X 16 matrix',
+                      '8 X 8 matrix',
                       style: GoogleFonts.montserrat(fontSize: 18),
                     ),
                   ),
